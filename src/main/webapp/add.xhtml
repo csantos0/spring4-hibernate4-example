@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+
+<h:body>
+
+	<h2>Books Form - Hibernate / Spring</h2>
+	
+	<h:form>
+		 
+		<h:panelGrid columns="2">
+			            
+			<h:outputText value="Name :"/>			      
+			<h:inputText id="bName" value="#{bookBean.book.name}" required="true" requiredMessage ="Please Enter Name!"/>
+			
+			<h:outputText value="Author :"/>			      
+			<h:inputText id="bAuthor" value="#{bookBean.book.author}" required="true" requiredMessage ="Please Enter Author"/>
+			
+			<h:outputText value="ISBN :"/>			      
+			<h:inputText id="bIsbn" value="#{bookBean.book.isbn}" required="true" requiredMessage ="Please Enter ISBN!"/>
+			
+		</h:panelGrid>
+		
+		<br/>	
+		<h:commandButton action="#{bookBean.addBook}" value="Save Book" />
+	</h:form>
+	
+
+</h:body>
+
+</html>
