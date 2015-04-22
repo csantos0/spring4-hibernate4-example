@@ -76,7 +76,6 @@
 		</dependency>
 
 		<!-- Utils -->
-
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc6</artifactId>
@@ -101,46 +100,14 @@
 			<artifactId>jsf-impl</artifactId>
 			<version>${jsf.version}</version>
 		</dependency>
-
-		<!-- Ice Faces -->
-		<!-- <dependency>
-			<groupId>org.icefaces</groupId>
-			<artifactId>icefaces</artifactId>
-			<version>${icefaces.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.icefaces</groupId>
-			<artifactId>icefaces-ace</artifactId>
-			<version>${icefaces.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.icefaces</groupId>
-			<artifactId>icefaces-compat</artifactId>
-			<version>${icefaces.version}</version>
-		</dependency> -->
-
+		
 		<!-- JSTL -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
-		</dependency>	
+		</dependency>			
 		
-		<!-- EL -->
-			<!-- <dependency>
-				<groupId>javax.el</groupId>
-				<artifactId>el-api</artifactId>
-				<version>2.2</version>
-			</dependency>
-			<dependency>
-				<groupId>org.glassfish.web</groupId>
-				<artifactId>el-impl</artifactId>
-				<version>2.2</version>
-			</dependency> -->
-		
-
 		<!-- Testes Business e Web -->
 
 		<!-- JUnit -->
@@ -223,15 +190,13 @@
 	</build>
 
 	<properties>
-
-		<!-- Geral -->
+		
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
 
 		<servlet.version>2.5</servlet.version>
-		<jsf.version>2.1.21</jsf.version>
-		<icefaces.version>3.3.0</icefaces.version>
+		<jsf.version>2.1.21</jsf.version>		
 
 		<spring.version>4.1.6.RELEASE</spring.version>
 		<hibernate.core.version>4.3.9.Final</hibernate.core.version>
